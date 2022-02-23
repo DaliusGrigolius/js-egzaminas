@@ -21,15 +21,10 @@ const users = [
 ];
 
 // --- 1 ---
-const getUserAverageAge = (users) => {
-	const avarageUserAge = users.reduce((a, b) => a + b.age, 0) / users.length;
-	console.log(avarageUserAge);
-};
-getUserAverageAge(users);
+const getUserAverageAge = (users) =>
+	users.reduce((a, b) => a + b.age, 0) / users.length;
+console.log(getUserAverageAge(users));
 
 // --- 2 ---
-const getUsersNames = (users) => {
-	const userNamesArr = users.map((user) => user.name);
-	console.log(userNamesArr);
-};
-getUsersNames(users);
+const getUsersNames = (users) => users.map((user) => user.name);
+console.log(getUsersNames(users));

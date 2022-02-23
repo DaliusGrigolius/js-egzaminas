@@ -22,14 +22,12 @@ const users = [
 
 // --- 1 ---
 const filterDogOwners = (users) => {
-	const filteredDogOwners = users.filter((user) => user.hasDog);
-	console.log(filteredDogOwners);
+	return users.filter((user) => user.hasDog);
 };
-filterDogOwners(users);
+console.log(filterDogOwners(users));
 
 // --- 2 ---
 const filterAdults = (users) => {
-	const filterAdults = users.filter((user) => user.age >= 18);
-	console.log(filterAdults);
+	return users.filter((user) => user.age >= 18);
 };
-filterAdults(users);
+console.log(filterAdults(users));
