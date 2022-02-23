@@ -21,13 +21,9 @@ const users = [
 ];
 
 // --- 1 ---
-const filterDogOwners = (users) => {
-	return users.filter((user) => user.hasDog);
-};
+const filterDogOwners = (users) => users.filter((user) => user.hasDog);
 console.log(filterDogOwners(users));
 
 // --- 2 ---
-const filterAdults = (users) => {
-	return users.filter((user) => user.age >= 18);
-};
+const filterAdults = (users) => users.filter((user) => user.age >= 18);
 console.log(filterAdults(users));
