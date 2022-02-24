@@ -16,11 +16,11 @@ const handleSubmit = (e) => {
 	const input = document.getElementById("search");
 	const outputDiv = document.getElementById("output");
 
-	const lbResult = Number(input.value) * 2.2046;
-	const gResult = Number(input.value) / 0.001;
-	const ozResult = Number(input.value) * 35.274;
+	const lbResult = (Number(input.value) * 2.2046).toFixed(2);
+	const gResult = (Number(input.value) / 0.001).toFixed(2);
+	const ozResult = (Number(input.value) * 35.274).toFixed(2);
 
-	outputDiv.innerHTML = `${input.value}kg converted to:</br><br> LBS(svarai) = ${lbResult};</br> GRAMS(gramai) = ${gResult};</br> OUNCES(uncijos) = ${ozResult}.`;
+	outputDiv.innerHTML = `${input.value}kg converted to:</br><br> LBS(svarai) = ${lbResult}</br> GRAMS(gramai) = ${gResult}</br> OUNCES(uncijos) = ${ozResult}`;
 	outputDiv.style =
 		"text-align: center; font-family: comic-sans; font-weight: bolder; background-color: #eee";
 };
