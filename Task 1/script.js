@@ -22,7 +22,7 @@ const handleSubmit = (e) => {
 
 	outputDiv.innerHTML = `${input.value}kg converted to:</br><br> LBS(svarai) = ${lbResult}</br> GRAMS(gramai) = ${gResult}</br> OUNCES(uncijos) = ${ozResult}`;
 	outputDiv.style =
-		"text-align: center; font-family: comic-sans; font-weight: bolder; background-color: #eee";
+		"text-align: center; font-weight: bolder; background-color: #eee";
 };
 
 form.addEventListener("submit", handleSubmit);

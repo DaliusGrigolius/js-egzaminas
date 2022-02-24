@@ -27,7 +27,14 @@ form {
 	margin: 50px auto;
 	display: flex;
 	flex-wrap: wrap;
-	border-radius: 2em;
+}
+
+input#search {
+	border-start-start-radius: 1em;
+}
+
+input#submit-btn {
+	border-start-end-radius: 1em;
 }
 
 #search {
@@ -57,7 +64,8 @@ form {
 	margin: 0 auto;
 	width: 80%;
 	color: #35290a;
-	border-radius: 1em;
+	border-end-end-radius: 1em;
+	border-end-start-radius: 1em;
 	padding: 1em;
 	font-size: 18px;
 }
